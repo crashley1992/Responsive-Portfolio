@@ -290,3 +290,268 @@ footer {
 padding-top: 1%;
 color: white;
 }
+
+/*contact Page*/
+/*Content for contact form*/
+
+/*(portrait phones, less than 576px)*/
+@media (max-width: 588px) { 
+
+  .contactForm {
+    border: solid lightgrey 2px;
+    margin-top: 25%;
+  }
+
+  .container {
+    padding-left: 10px;
+    margin-top: 5%;
+  }
+
+#fname {
+  display: block;
+  margin-bottom: 25px;
+  width: 90%;
+}
+
+#email {
+  display: block;
+  margin-bottom: 25px;
+  width: 90%;
+}
+
+#message {
+  display: block;
+  width: 90%;
+  height: 200px;
+}
+
+/*Style button like image*/
+#submit {
+  margin-top: 15px;
+  background-color: #4aaaa5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#submit:hover {
+  background-color: lightgrey;
+}
+
+}
+/*Medium screen*/
+@media (min-width: 589px) and (max-width: 1024px) { 
+
+  .contactForm {
+    border: solid lightgrey 2px;
+    margin-top: 25%;
+  }
+
+  .container {
+    padding-left: 10px;
+    margin-top: 5%;
+  }
+
+#fname {
+  display: block;
+  margin-bottom: 25px;
+  width: 90%;
+}
+
+#email {
+  display: block;
+  margin-bottom: 25px;
+  width: 90%;
+}
+
+#message {
+  display: block;
+  width: 90%;
+  height: 200px;
+}
+
+/*Style button like image*/
+#submit {
+  margin-top: 15px;
+  background-color: #4aaaa5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#submit:hover {
+  background-color: lightgrey;
+}
+
+}
+
+
+@media (min-width: 1025px) { 
+
+    .contactForm {
+      border: solid lightgrey 2px;
+      margin-top: 5%;
+    }
+  
+    .container {
+      padding-left: 10px;
+      margin-top: 5%;
+    }
+  
+  #fname {
+    display: block;
+    margin-bottom: 25px;
+    width: 90%;
+  }
+  
+  #email {
+    display: block;
+    margin-bottom: 25px;
+    width: 90%;
+  }
+  
+  #message {
+    display: block;
+    width: 90%;
+    height: 200px;
+  }
+  
+  /*Style button like image*/
+  #submit {
+    margin-top: 15px;
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  #submit:hover {
+    background-color: lightgrey;
+  }
+
+}
+
+/*Portfolio*/
+
+/*Portfolio content sections*/
+/*(portrait phones, less than 576px)*/
+
+@media (max-width: 588px) { 
+.portfolioContentSection {
+  border: #dddddd solid 2px;
+  background: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25%;
+}
+
+.gallery > img {
+  border: solid black 1px;
+  margin-top: 5%;
+}
+
+span {
+ position: absolute;
+ margin-left: 14%;
+ display: block;
+ margin-top: -10%;
+ background-color: #4aaaa5;
+ color: white;
+ width: 253px;
+ height: 25px;
+ text-align: center;
+}
+
+}
+
+@media (min-width: 589px) and (max-width: 1024px) { 
+
+  .portfolioContentSection {
+    border: #dddddd solid 2px;
+    background: #ffffff;
+    width: 960px;
+    height: 800px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+  }
+  /*Image gallery positioning*/
+  .gallery {
+    display: inline-block;
+    margin-left: 120px;
+  }
+  
+  .gallery > img {
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+    border: solid lightgrey 2px;
+  }
+
+  span {
+    position: absolute;
+    margin-left: 0%;
+    display: block;
+    margin-top: 15%;
+    background-color: #4aaaa5;
+    color: white;
+    width: 210px;
+    height: 25px;
+    text-align: center;
+   }
+
+
+}
+
+
+@media (min-width: 1025px) { 
+
+  .portfolioContentSection {
+    border: #dddddd solid 2px;
+    background: #ffffff;
+    width: 960px;
+    height: 800px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+  }
+  /*Image gallery positioning*/
+  .gallery {
+    display: inline-block;
+    margin-left: 120px;
+  }
+  
+  .gallery > img {
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+    border: solid lightgrey 2px;
+  }
+
+  span {
+    position: absolute;
+    margin-left: 0%;
+    display: block;
+    margin-top: 10%;
+    background-color: #4aaaa5;
+    color: white;
+    width: 210px;
+    height: 25px;
+    text-align: center;
+   }
+
+
+}
