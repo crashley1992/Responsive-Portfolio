@@ -23,6 +23,7 @@ body {
     color:#cccccc;
     margin-top: 10%;
     padding-top: 10px;
+    font-size: 15px;
   }
 
   .navbar, a {
@@ -75,6 +76,7 @@ body {
     margin-right: 10%;
     margin-top: 3%;
     position: relative;
+    font-size: 15px;
   }
 
   .navbar, a {
