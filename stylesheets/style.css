@@ -1,9 +1,11 @@
 body {
+  background-image: url(../img/background.jpg);
 }
+
 /*(portrait phones, less than 576px)*/
-@media (max-width: 588px) { 
+@media (max-width: 588px) {
   .header {
-    background-color:#4aaaa5;
+    background-color: #4aaaa5;
     top: 0;
     left: 0;
     width: 100%;
@@ -18,9 +20,10 @@ body {
 
   .navbar {
     background-color: white;
+    height: 25px;
     text-align: center;
     text-decoration: none;
-    color:#cccccc;
+    color: #cccccc;
     margin-top: 10%;
     padding-top: 10px;
     font-size: 15px;
@@ -33,30 +36,33 @@ body {
 
   a {
     text-decoration: none;
-    color:#cccccc;
+    color: #cccccc;
   }
-  
+
   a:hover {
     color: blue;
   }
-  
+
   a:after {
     color: blue;
   }
-  
+
   .centerNavItem {
     border-left: 1px #cccccc solid;
     border-right: 1px #cccccc solid;
   }
 }
+
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width: 589px) and (max-width: 1024px) { 
+@media (min-width: 589px) and (max-width: 1024px) {
   .header {
     top: 0;
     left: 0;
     width: 100%;
     position: absolute;
     display: inline-block;
+    background-color: white;
+    height: 70px;
   }
 
   .studentName {
@@ -83,100 +89,97 @@ body {
     padding-left: 10px;
     padding-right: 10px;
   }
-  
+
   a {
     text-decoration: none;
-    color:#cccccc;
+    color: #cccccc;
   }
-  
+
   a:hover {
     color: blue;
   }
-  
+
   a:after {
     color: blue;
   }
-  
+
   .centerNavItem {
     border-left: 1px #cccccc solid;
     border-right: 1px #cccccc solid;
   }
-
- }
+}
 
 /*Large screen*/
+@media (min-width: 1025px) {
+  .header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    background-color: white;
+    border-bottom: solid #cccccc 2px;
+    height: 70px;
+    margin-bottom: 5%;
+  }
 
-@media (min-width: 1025px)  {
- 
-.header {
-  top: 0;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  display: inline-block;
-}
+  .studentName {
+    color: white;
+    background-color: #4aaaa5;
+    text-align: center;
+    margin-left: 5%;
+    width: 33%;
+    height: 50px;
+    margin-top: 0;
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+  }
 
-.studentName {
-  color: white;
-  background-color: #4aaaa5;
-  text-align: center;
-  margin-left: 5%;
-  width: 33%;
-  height: 50px;
-  margin-top: 0;
-  padding: 10px 10px 10px 10px;
-  display: inline-block;
+  .navbar {
+    float: right;
+    margin-top: 1%;
+    margin-right: 10%;
+    font-size: 20px;
+  }
 
-}
+  .navbar, a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-.navbar {
-  float: right;
-  margin-top: 1%;
-  margin-right: 10%;
-  font-size: 20px;
-}
+  a {
+    text-decoration: none;
+    color: #cccccc;
+  }
 
-.navbar, a {
-  padding-left: 10px;
-  padding-right: 10px;
-  
-}
+  a:hover {
+    color: blue;
+  }
 
-a {
-  text-decoration: none;
-  color:#cccccc;
-}
+  a:after {
+    color: blue;
+  }
 
-a:hover {
-  color: blue;
-}
-
-a:after {
-  color: blue;
-}
-
-.centerNavItem {
-  border-left: 1px #cccccc solid;
-  border-right: 1px #cccccc solid;
-}
-
+  .centerNavItem {
+    border-left: 1px #cccccc solid;
+    border-right: 1px #cccccc solid;
+  }
 }
 
 /*(portrait phones, less than 576px)*/
-@media (max-width: 588px) { 
-
+@media (max-width: 588px) {
   .contentSection {
     border: #dddddd solid 2px;
     background: #ffffff;
-    margin-top: 30%;
+    margin-top: 35%;
     margin-left: auto;
     margin-right: auto;
     width: 85%;
-
   }
 
   .aboutTitle {
     border-bottom: #cccccc solid 1px;
+    width: 90%;
     color: #4aaaa5;
     margin-left: auto;
     margin-right: auto;
@@ -185,8 +188,8 @@ a:after {
   }
 
   img {
-    width: 250px;
-    height: 200px;
+    width: 200px;
+    height: 150px;
     margin-left: 15%;
     text-align: center;
   }
@@ -196,11 +199,9 @@ a:after {
     line-height: 200%;
     color: #777777;
   }
-
 }
 
-@media (min-width: 589px) and (max-width: 1024px) { 
-
+@media (min-width: 589px) and (max-width: 1024px) {
   .contentSection {
     border: #dddddd solid 2px;
     background: #ffffff;
@@ -208,7 +209,6 @@ a:after {
     margin-left: auto;
     margin-right: auto;
     width: 85%;
-
   }
 
   .aboutTitle {
@@ -218,6 +218,7 @@ a:after {
     margin-right: auto;
     padding-bottom: 3%;
     text-align: center;
+    width: 93%;
   }
 
   img {
@@ -225,6 +226,7 @@ a:after {
     height: 250px;
     float: left;
     padding-right: 3%;
+    padding-left: 3%;
   }
 
   p {
@@ -234,9 +236,7 @@ a:after {
   }
 }
 
-
 @media (min-width: 1025px) {
-
   .contentSection {
     border: #dddddd solid 2px;
     background: #ffffff;
@@ -244,15 +244,15 @@ a:after {
     margin-left: auto;
     margin-right: auto;
     width: 85%;
-
   }
 
   .aboutTitle {
     border-bottom: #cccccc solid 1px;
+    width: 90%;
     color: #4aaaa5;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
     text-align: center;
   }
 
@@ -261,10 +261,12 @@ a:after {
     height: 250px;
     float: left;
     padding-right: 3%;
+    margin-left: 5%;
   }
 
   p {
     padding-left: 3%;
+    padding-right: 3%;
     line-height: 200%;
     color: #777777;
   }
@@ -281,149 +283,63 @@ footer {
   margin-top: 10%;
   text-align: center;
   /*Makes footer sticky*/
-  position:fixed; 
+  position: fixed;
   width: 100%;
   left: 0;
   bottom: 0;
-  
 }
 
 .footerText {
-padding-top: 1%;
-color: white;
+  color: white;
 }
 
-/*contact Page*/
+/*Contact Page*/
 /*Content for contact form*/
+/*Universial styling for contact page*/
+.contactForm {
+  background-color: white;
+}
 
 /*(portrait phones, less than 576px)*/
-@media (max-width: 588px) { 
-
+@media (max-width: 588px) {
   .contactForm {
     border: solid lightgrey 2px;
-    margin-top: 25%;
+    margin-top: 35%;
+    margin-bottom: 25%;
   }
 
   .container {
-    padding-left: 10px;
+    padding-left: 60px;
     margin-top: 5%;
   }
 
-#fname {
-  display: block;
-  margin-bottom: 25px;
-  width: 90%;
-}
-
-#email {
-  display: block;
-  margin-bottom: 25px;
-  width: 90%;
-}
-
-#message {
-  display: block;
-  width: 90%;
-  height: 200px;
-}
-
-/*Style button like image*/
-#submit {
-  margin-top: 15px;
-  background-color: #4aaaa5;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-#submit:hover {
-  background-color: lightgrey;
-}
-
-}
-/*Medium screen*/
-@media (min-width: 589px) and (max-width: 1024px) { 
-
-  .contactForm {
-    border: solid lightgrey 2px;
-    margin-top: 25%;
-  }
-
-  .container {
-    padding-left: 10px;
-    margin-top: 5%;
-  }
-
-#fname {
-  display: block;
-  margin-bottom: 25px;
-  width: 90%;
-}
-
-#email {
-  display: block;
-  margin-bottom: 25px;
-  width: 90%;
-}
-
-#message {
-  display: block;
-  width: 90%;
-  height: 200px;
-}
-
-/*Style button like image*/
-#submit {
-  margin-top: 15px;
-  background-color: #4aaaa5;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-#submit:hover {
-  background-color: lightgrey;
-}
-
-}
-
-
-@media (min-width: 1025px) { 
-
-    .contactForm {
-      border: solid lightgrey 2px;
-      margin-top: 5%;
-    }
-  
-    .container {
-      padding-left: 10px;
-      margin-top: 5%;
-    }
-  
   #fname {
     display: block;
     margin-bottom: 25px;
-    width: 90%;
+    margin-top: 5%;
+    width: 80%;
+    border-bottom: solid black 1px;
   }
-  
+
   #email {
     display: block;
     margin-bottom: 25px;
-    width: 90%;
+    margin-top: 10px;
+    width: 80%;
+    border-bottom: solid black 1px;
   }
-  
+
   #message {
     display: block;
-    width: 90%;
-    height: 200px;
+    width: 80%;
+    margin-top: 10px;
   }
-  
+
+  textarea {
+    margin-top: 5%;
+    border-top: solid black 1px;
+  }
+
   /*Style button like image*/
   #submit {
     margin-top: 15px;
@@ -435,69 +351,169 @@ color: white;
     text-decoration: none;
     font-size: 16px;
   }
-  
+
   #submit:hover {
     background-color: lightgrey;
   }
+}
 
+/*Medium screen*/
+@media (min-width: 589px) and (max-width: 1024px) {
+  .contactForm {
+    border: solid lightgrey 2px;
+    margin-top: 25%;
+  }
+
+  .container {
+    padding-left: 10px;
+    margin-top: 5%;
+  }
+
+  #fname {
+    display: block;
+    margin-bottom: 25px;
+    width: 90%;
+    border-bottom: solid black 1px;
+  }
+
+  #email {
+    display: block;
+    margin-bottom: 25px;
+    width: 90%;
+    border-bottom: solid black 1px;
+  }
+
+  #message {
+    display: block;
+    width: 90%;
+    height: 200px;
+  }
+
+  /*Style button like image*/
+  #submit {
+    margin-top: 15px;
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  #submit:hover {
+    background-color: lightgrey;
+  }
+}
+
+@media (min-width: 1025px) {
+  .contactForm {
+    border: solid lightgrey 2px;
+    margin-top: 6%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    padding-left: 10px;
+    margin-top: 5%;
+  }
+
+  #fname {
+    display: block;
+    margin-bottom: 25px;
+    width: 90%;
+    border-bottom: solid black 1px;
+  }
+
+  #email {
+    display: block;
+    margin-bottom: 25px;
+    width: 90%;
+    border-bottom: solid black 1px;
+  }
+
+  #message {
+    display: block;
+    width: 90%;
+    height: 200px;
+  }
+
+  /*Style button like image*/
+  #submit {
+    margin-top: 15px;
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  #submit:hover {
+    background-color: lightgrey;
+  }
 }
 
 /*Portfolio*/
-
 /*Portfolio content sections*/
 /*(portrait phones, less than 576px)*/
-
-@media (max-width: 588px) { 
-.portfolioContentSection {
-  border: #dddddd solid 2px;
-  background: #ffffff;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25%;
-}
-
-.gallery > img {
-  border: solid black 1px;
-  margin-top: 5%;
-}
-
-span {
- position: absolute;
- margin-left: 14%;
- display: block;
- margin-top: -10%;
- background-color: #4aaaa5;
- color: white;
- width: 253px;
- height: 25px;
- text-align: center;
-}
-
-}
-
-@media (min-width: 589px) and (max-width: 1024px) { 
-
+@media (max-width: 588px) {
   .portfolioContentSection {
     border: #dddddd solid 2px;
     background: #ffffff;
-    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35%;
+    margin-bottom: 25%;
+  }
+
+  .gallery>img {
+    border: solid black 1px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+
+  span {
+    position: absolute;
+    margin-left: 14%;
+    display: block;
+    margin-top: -14%;
+    background-color: #4aaaa5;
+    color: white;
+    width: 203px;
+    height: 25px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 589px) and (max-width: 1024px) {
+  .portfolioContentSection {
+    border: #dddddd solid 2px;
+    background: #ffffff;
+    width: 90%;
     height: 800px;
     padding-left: 25px;
     padding-right: 25px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
+    margin-top: 15%;
   }
+
   /*Image gallery positioning*/
   .gallery {
     display: inline-block;
     margin-left: 120px;
   }
-  
-  .gallery > img {
+
+  .gallery>img {
     width: 200px;
     height: 200px;
     margin-top: 15px;
+    text-align: center;
     border: solid lightgrey 2px;
   }
 
@@ -508,52 +524,47 @@ span {
     margin-top: 15%;
     background-color: #4aaaa5;
     color: white;
-    width: 210px;
+    width: 215px;
     height: 25px;
     text-align: center;
-   }
-
-
+  }
 }
 
-
-@media (min-width: 1025px) { 
-
+@media (min-width: 1025px) {
   .portfolioContentSection {
     border: #dddddd solid 2px;
     background: #ffffff;
     width: 960px;
-    height: 800px;
+    height: 1000px;
     padding-left: 25px;
     padding-right: 25px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
   }
+
   /*Image gallery positioning*/
   .gallery {
     display: inline-block;
     margin-left: 120px;
   }
-  
-  .gallery > img {
-    width: 200px;
-    height: 200px;
+
+  .gallery>img {
+    width: 250px;
+    height: 250px;
     margin-top: 15px;
     border: solid lightgrey 2px;
   }
 
   span {
     position: absolute;
-    margin-left: 0%;
+    margin-left: 1%;
     display: block;
-    margin-top: 10%;
+    margin-top: 12%;
     background-color: #4aaaa5;
     color: white;
-    width: 210px;
+    width: 258px;
     height: 25px;
     text-align: center;
-   }
-
-
+  }
 }
