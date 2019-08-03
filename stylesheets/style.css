@@ -172,6 +172,7 @@ body {
     border: #dddddd solid 2px;
     background: #ffffff;
     margin-top: 35%;
+    margin-bottom: 25%;
     margin-left: auto;
     margin-right: auto;
     width: 85%;
@@ -541,6 +542,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
+    margin-bottom: 15%;
   }
 
   /*Image gallery positioning*/
